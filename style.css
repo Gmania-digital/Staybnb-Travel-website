@@ -266,5 +266,37 @@ nav {
         
 }
 
+.about-msg h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 500
+}
 
+
+/*-------------------Footer -----------------*/
+
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+    
+}
+
+.footer a {
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px; 
+}
+
+.footer hr{
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0px;
+    margin: 20px 0;
+}
+
+.footer p{
+    padding-bottom: 15px;
+}
 
