@@ -7,7 +7,7 @@
     <title>Staybnb Travel Website</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    
+
     <script src="https://kit.fontawesome.com/259e3857f9.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,7 +15,7 @@
 
     <!-------------------Navigation bar ----------------->
     <div class="header">
-        <nav>
+        <nav id="navbar">
             <img src="images/logo.png" class="logo">
             <ul class="nav-links">
                 <li> <a href="#" class="active">Popular Places</a></li>
@@ -23,6 +23,7 @@
                 <li> <a href="#">Online Packages</a></li>
             </ul>
             <a href="#" class=register-btn>Register Now</a>
+            <i class="fas fa-bars" onclick="togglebtn()"></i>
 
         </nav>
 
@@ -196,13 +197,13 @@
 
 
         <!-------------------About Us ----------------->
-        
+
         <div class="about-msg">
             <h2> About Staybnb</h2>
             <p>Nullam at lorem aliquam mauris rutrum mattis. Aenean eu congue sapien. Etiam rhoncus, erat eu malesuada imperdiet, ipsum ipsum tristique sapien, et egestas turpis orci et tortor. Phasellus malesuada urna eget arcu ornare feugiat. Aliquam ac tortor vitae nisi lacinia lacinia. Curabitur at dui eu nunc congue ornare. </p>
-            
+
         </div>
-        
+
         <!-------------------footer ----------------->
         <div class="footer">
             <a href="https://facebook.com/"><i class="fab fa-facebook-f"> </i></a>
@@ -210,26 +211,32 @@
             <a href="https://instagram.com/"><i class="fab fa-instagram"> </i></a>
             <a href="https://twitter.com/"><i class="fab fa-twitter"> </i></a>
             <a href="https://linkeding.com/"><i class="fab fa-linkedin-in"> </i></a>
-            
+
             <hr>
             <p> Copyright 2022, Gmania Digital Pro </p>
-            
+
         </div>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
 
     </div>
+
+
+    <script>
+        var navbar = document.getElementById("navbar");
+
+        function togglebtn() {
+
+            navbar.classList.toggle("hidemenu");
+        }
+    </script>
 
 
 </body></html>

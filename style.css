@@ -258,12 +258,12 @@ nav {
 /*-------------------About us -----------------*/
 
 
-.about-msg{
+.about-msg {
     text-align: center;
     margin: 80px 0;
     color: #333;
     font-size: 17px;
-        
+
 }
 
 .about-msg h2 {
@@ -275,20 +275,20 @@ nav {
 
 /*-------------------Footer -----------------*/
 
-.footer{
+.footer {
     margin: 80px 0 10px;
     text-align: center;
-    
+
 }
 
 .footer a {
     text-decoration: none;
     color: #999;
     font-size: 22px;
-    margin: 0 10px; 
+    margin: 0 10px;
 }
 
-.footer hr{
+.footer hr {
     background: #999;
     height: 1px;
     width: 100%;
@@ -296,25 +296,98 @@ nav {
     margin: 20px 0;
 }
 
-.footer p{
+.footer p {
     padding-bottom: 15px;
 }
 
 /*-------------------active page indicator  -----------------*/
 
-.active{
+.active {
     position: relative;
-    
+
 }
 
-.active::after{
+.active::after {
     content: '';
     background: #fff;
-    width: 60px ;
+    width: 25px;
     height: 2px;
     position: absolute;
     left: 50%;
     transform: translateX(-50);
     bottom: -12px;
     border-radius: 2px;
+}
+
+nav .fa-bars {
+    display: none;
+}
+
+/*-------------------For small screen device  -----------------*/
+
+@media only screen and (max-width: 700px) {
+
+    .logo {
+        position: fixed;
+        top: 4%;
+        left: 7%;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        display: inline-block;
+        width: 100%;
+        padding: 100px 7% 0;
+        background: #000;
+        text-align: right;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+
+    nav .nav-links li {
+
+        margin: 10px 0;
+        display: block;
+    }
+
+    .register-btn {
+        margin: 15px 0 30px;
+        display: inline-block;
+    }
+
+    nav .fa-bars {
+        display: block;
+        position: fixed;
+        top: 4%;
+        right: 7%;
+        color: #fff; 
+        font-size: 28px;
+    }
+
+    .active::after {
+
+    left: -40%;
+    transform: translate(0,50);
+    bottom: 50%;
+    }
+       
+     .hidemenu{
+         
+         max-height: 300px;
+         
+    }
+
+    
+    
+    
+    
+
+    
+    
+    
+    
 }
