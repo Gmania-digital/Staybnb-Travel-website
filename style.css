@@ -300,3 +300,21 @@ nav {
     padding-bottom: 15px;
 }
 
+/*-------------------active page indicator  -----------------*/
+
+.active{
+    position: relative;
+    
+}
+
+.active::after{
+    content: '';
+    background: #fff;
+    width: 60px ;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50);
+    bottom: -12px;
+    border-radius: 2px;
+}
