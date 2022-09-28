@@ -561,12 +561,47 @@ nav.navbar-white .fa-bars{
     
 } 
 
+.sidebar{
+    border: 1px solid #999;
+    padding: 20px 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+ 
+.sidebar h2{
+    font-weight: 500;
+}
 
+.sidebar h3{
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
 
+.filter{
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin: 10px;
+    
+}
 
+.filter p{ 
+flex: 1
+}
 
+.filter input {
+    margin-right: 15px;
+    cursor: pointer;
+}
 
+.sidebar-link{
+    text-align: right;
+    margin: 20px 0;
+}
 
+.sidebar-link a {
+    text-decoration: none
+}
 
 
 
