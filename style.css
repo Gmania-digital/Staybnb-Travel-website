@@ -923,9 +923,14 @@ c h1 {
         border-radius: 4px;
     }
     
+    .host{
+        display: block;
+        line-height: 28px;
+    }
     
-    
-    
+    .contact-host{
+margin: 40px 0;
+    }
     
     
     
